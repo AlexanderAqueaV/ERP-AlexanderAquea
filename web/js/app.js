@@ -188,11 +188,11 @@ $(document).ready(function() {
 	// RESET WIDGETS
 	$('#refresh').click(function(e) {
 		$.SmartMessageBox({
-			title : "<i class='fa fa-refresh' style='color:green'></i> Clear Local Storage",
-			content : "Would you like to RESET all your saved widgets and clear LocalStorage?",
-			buttons : '[No][Yes]'
+			title : "<i class='fa fa-refresh' style='color:green'></i> Limpiar Almacenamiento Local",
+			content : "Desearía REINICIAR todos sus widget guardados y limpiar el almacenamiento local?",
+			buttons : '[No][Sí]'
 		}, function(ButtonPressed) {
-			if (ButtonPressed == "Yes" && localStorage) {
+			if (ButtonPressed == "Sí" && localStorage) {
 				localStorage.clear();
 				location.reload();
 			}

@@ -353,7 +353,6 @@
                                                     </c:if>
                                                 </div>
                                             </fieldset>                                                                                       
-
                                             <footer>
                                                 <input type="hidden" name="add" value="ok"/>
                                                 <button name="btnUpdate" class="btn btn-primary" type="submit">

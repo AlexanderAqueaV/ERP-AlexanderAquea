@@ -56,7 +56,7 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> Indicador Económico</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Indicador Económico</span></a>                
             </li>
 
             <li <c:if test="${userActive != null}">class="active"</c:if>>
@@ -81,7 +81,9 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-list-ol"></i> <span class="menu-item-parent">Inventario</span></a>
                 <ul>
                     <li><a href="#">Asignaciones</a></li>
-                    <li><a href="#">Bodegas</a></li>
+                    <li <c:if test="${userActive != null}">class="active"</c:if>>
+                    <a href="BodegaMainServlet"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Bodegas</span></a>
+                    </li>
                     <li><a href="#">Productos en Bodega</a></li>
                     <li><a href="#">Ordenes de Bodega</a>
                         <ul>                            
@@ -91,6 +93,17 @@
                     </li>                    
                 </ul>
             </li>
+            
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">Tienda</span></a>
+                <ul>
+                    <li><a href="#">Asignaciones</a></li>
+                    <li><a href="#">Secciones</a></li>
+                    <li><a href="#">Productos en sección</a></li>
+                    <li><a href="#">Ordenes de sección</a>
+                </ul>
+            </li>
+            
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-gears"></i> <span class="menu-item-parent">Producción</span></a>
                 <ul>
@@ -98,6 +111,8 @@
                     <li><a href="#">Proceso General</a></li>
                     <li><a href="#">Plantas</a></li>
                     <li><a href="#">Procesos en Plantas</a></li>
+                    <li><a href="#">Productos en planta</a></li>
+                    <li><a href="#">Ordenes de producción</a>
                 </ul>
             </li>
 
